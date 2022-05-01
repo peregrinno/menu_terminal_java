@@ -13,7 +13,7 @@ public class Adm implements contratoCrud{
         "->  ");
         
     }
-
+    
     @Override
     public void cadastra() {
         // TODO Auto-generated method stub

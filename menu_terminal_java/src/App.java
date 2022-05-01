@@ -43,8 +43,17 @@ public class App {
                     contratoCrud rh = new Rh();
 
                     rh.mostra_menu2();
-                
 
+                    break;
+                
+                case "4":
+
+                    //Novo obejto da classe administração
+                    contratoCrud adm = new Adm();
+
+                    adm.mostra_menu2();
+
+                    break;
 
                 default:
                     System.out.println("Caso default");
