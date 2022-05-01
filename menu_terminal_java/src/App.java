@@ -3,13 +3,10 @@ import java.util.*;
 public class App {
     public static void main(String[] args) throws Exception {
         boolean status_loja = true;
+        String entrada1;
 
         //entrada_menu
         Scanner entrada_menu_inicial = new Scanner(System.in);
-
-        //entrada menu estoque estoque
-        Scanner entrada_menu_estoque = new Scanner(System.in);
-
         while (status_loja == true) {
             //Novo objeto para utilirarios
             Utilitarios util = new Utilitarios();
@@ -17,7 +14,7 @@ public class App {
             //Chama metodo para mostrar menu
             System.out.print(util.mostrar_menu_inicial());
             
-            String entrada1 = entrada_menu_inicial.nextLine();
+            entrada1 = entrada_menu_inicial.nextLine();
 
             switch (entrada1) {
                 case "0":
@@ -25,15 +22,32 @@ public class App {
                     break;
                 case "1":
                     //Novo objeto da classe estoque
-                    Estoque estoque = new Estoque();
+                    contratoCrud estoque = new Estoque();
 
-                    estoque.menu_estoque();
+                    estoque.mostra_menu2();
+    
+                    break;
 
-                    
+                case "2":
 
+                    //Novo objeto da classe caixa
+                    contratoCrud caixa = new Caixa();
+
+                    caixa.mostra_menu2();
 
                     break;
+
+                case "3":
+                    
+                    //Novo obejto da classe funcionario
+                    contratoCrud rh = new Rh();
+
+                    rh.mostra_menu2();
+                
+
+
                 default:
+                    System.out.println("Caso default");
                     break;
             }
         }

@@ -1,16 +1,14 @@
-import java.util.*;
-
-public class Estoque {
+public class Estoque implements contratoCrud{
     
-    void menu_estoque(){
+    public void mostra_menu2(){
         System.out.print("+######  STORE CASE - CARUARU  ###### +\n" +
-        "+              MENU                   +\n" +
+        "+              MENU - ESTOQUE         +\n" +
         "+                                     +\n" +
-        "+          [1] - MOSTRA ESTOQUE ATUAL +\n" +
-        "+          [2] - CADASTRAR PRODUTO    +\n" +
-        "+          [3] - REMOVER PRODUTO      +\n" +
-        "+          [4] - ATUALIZAR PRODUTO    +\n" +
-        "+          [0] - SAIR                 +\n" +
+        "+       [1] - MOSTRA ESTOQUE ATUAL    +\n" +
+        "+       [2] - CADASTRAR PRODUTO       +\n" +
+        "+       [3] - REMOVER PRODUTO         +\n" +
+        "+       [4] - ATUALIZAR PRODUTO       +\n" +
+        "+       [0] - SAIR                    +\n" +
         "+-------------------------------------+\n" +
         "->  ");
     }
@@ -23,15 +21,16 @@ public class Estoque {
         return estoque_atual;
     }
 
-    void cadastra_produto(){
+    public void cadastra(){
        System.out.print("Metodo cadastra produto");
     }
 
-    void remove_produto(){
-        System.out.print("Metodo remvendo produtod");
+    public void remove(){
+        System.out.print("Metodo removendo produtod");
     }
 
-   
-
+    public void atualiza(){
+        System.out.print("Metodo atualçza produto");
+    }
 
 }

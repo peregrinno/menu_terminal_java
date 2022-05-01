@@ -2,7 +2,6 @@
 
 public class Utilitarios {
     
-
     String mostrar_menu_inicial(){
         String menu = "+######  STORE CASE - CARUARU  ###### +\n" +
                     "+              MENU                   +\n" +
