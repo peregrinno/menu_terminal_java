@@ -27,13 +27,13 @@ public class Rh implements contratoCrud{
 
     @Override
     public void remove() {
-        // TODO Auto-generated method stub
+        
         
     }
 
     @Override
     public void atualiza() {
-        // TODO Auto-generated method stub
+       
         
     }
 
