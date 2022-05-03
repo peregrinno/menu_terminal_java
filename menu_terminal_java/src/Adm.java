@@ -1,6 +1,6 @@
 public class Adm implements contratoCrud{
 
-    @Override
+
     public void mostra_menu2() {
         System.out.print("+######  STORE CASE - CARUARU  ###### +\n" +
         "+          MENU - ADMINISTRAÇÃO       +\n" +
@@ -14,19 +14,18 @@ public class Adm implements contratoCrud{
         
     }
     
-    @Override
+
+
     public void cadastra() {
         
         
     }
 
-    @Override
     public void remove() {
         
         
     }
 
-    @Override
     public void atualiza() {
         
     }

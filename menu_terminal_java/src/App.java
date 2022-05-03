@@ -4,11 +4,15 @@ public class App {
     public static void main(String[] args) throws Exception {
         boolean status_loja = true;
         String entrada1;
+        
+        boolean status_adm = true;
+        Scanner menu_adm = new Scanner(System.in);
+        String entrada2;
 
         //entrada_menu
         Scanner entrada_menu_inicial = new Scanner(System.in);
         while (status_loja == true) {
-            //Novo objeto para utilirarios
+            //Novo objeto para utilitarios
             Utilitarios util = new Utilitarios();
 
             //Chama metodo para mostrar menu
@@ -18,6 +22,7 @@ public class App {
 
             switch (entrada1) {
                 case "0":
+                    System.out.println("Saindo, obrigado por usar nosso sistema!");
                     status_loja = false;
                     break;
                 case "1":
@@ -47,12 +52,38 @@ public class App {
                     break;
                 
                 case "4":
-
+                    
                     //Novo obejto da classe administração
-                    contratoCrud adm = new Adm();
+                    while(status_adm == true){
+                        contratoCrud adm = new Adm();
 
-                    adm.mostra_menu2();
+                        adm.mostra_menu2();
+                        entrada2 = menu_adm.nextLine();
+                        
+                        switch(entrada2){
 
+                            case "0":
+                                System.out.println("Saindo");
+                                status_adm = false;
+                                break;
+                            
+                            case "1":
+                                System.out.println("Relatório de vendas");
+                                break;
+                            
+                            case "2":
+                                System.out.println("Cargos");
+                                break;
+                            
+                            case "3":
+                                System.out.println("Produtos + vendidos");
+                                break;
+                            
+                            default:
+                                System.out.println("Caso default");
+                                break;
+                        }
+                    }
                     break;
 
                 default:
