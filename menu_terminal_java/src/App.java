@@ -1,5 +1,5 @@
 import java.util.*;
-// Zé Felipe aqui
+// Zé Felipe e Luan do brega
 public class App {
     public static void main(String[] args) throws Exception {
         boolean status_loja = true;
