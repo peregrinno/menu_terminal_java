@@ -53,7 +53,7 @@ public class App {
                 
                 case "4":
                     
-                    //Novo obejto da classe administração
+                    //Novo objeto da classe administração
                     while(status_adm == true){
                         contratoCrud adm = new Adm();
 
